@@ -670,17 +670,18 @@ async function copyFolderRecursive(source, dest) {
 }
 
 
-function isElevated() {
-    try { execSync('net session', { stdio: 'ignore' }); return true; }
-    catch (e) { return false; }
-}
-function elevate() {
-    const exePath = app.getPath('exe');
-    const args = process.argv.slice(1);
-    exec(`powershell -Command "Start-Process '${exePath}' -ArgumentList '${args.join(' ')}' -Verb RunAs"`);
-    app.quit();
-}
-if (!isElevated()) { elevate(); return; }
+// ==================== التحقق من صلاحيات المسؤول (معطلة حالياً) ====================
+// function isElevated() {
+//     try { execSync('net session', { stdio: 'ignore' }); return true; }
+//     catch (e) { return false; }
+// }
+// function elevate() {
+//     const exePath = app.getPath('exe');
+//     const args = process.argv.slice(1);
+//     exec(`powershell -Command "Start-Process '${exePath}' -ArgumentList '${args.join(' ')}' -Verb RunAs"`);
+//     app.quit();
+// }
+// if (!isElevated()) { elevate(); return; }
 
 let mainWindow;
 let downloadPath = app.getPath('downloads');
@@ -1152,7 +1153,7 @@ $output | ConvertTo-Json -Compress
     }
 });
 
-
+// ==================== حساب التجزئة ====================
 ipcMain.handle('calculate-hash', async (event, { filePath, algorithm }) => {
     try {
         const script = `powershell -Command "Get-FileHash -Path '${filePath}' -Algorithm ${algorithm} | Select-Object -ExpandProperty Hash"`;
