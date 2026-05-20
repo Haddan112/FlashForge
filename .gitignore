@@ -1,0 +1,14 @@
+@"
+node_modules/
+dist/
+build/
+out/
+*.exe
+*.msi
+*.blockmap
+.env
+Thumbs.db
+.DS_Store
+*.log
+flashforge_debug.log
+"@ | Out-File -FilePath .gitignore -Encoding ascii

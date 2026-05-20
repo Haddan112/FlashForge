@@ -1,0 +1,39 @@
+{
+  "name": "flashforge",
+  "version": "1.0.0",
+  "description": "A powerful tool to burn OS images to USB drives",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "keywords": [
+    "usb",
+    "iso",
+    "bootable",
+    "windows",
+    "linux"
+  ],
+  "author": "Mohamed Haddan",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^42.0.1",
+    "electron-builder": "^26.8.1"
+  },
+  "build": {
+    "appId": "com.flashforge.app",
+    "productName": "FlashForge",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "icon.ico"
+    }
+  }
+}
