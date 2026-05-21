@@ -55,7 +55,7 @@ It combines essential burning capabilities with **smart exclusive features** and
 |--------|------------|
 | 🤖 **Auto‑detection of ISO type** | Automatically suggests the best file system, partition scheme, and DD mode |
 | 🩺 **USB health check** | Quick diagnostic report before burning |
-| 🌍 **Multilingual** | Arabic, English, French (Rufus does **not** support Arabic!) |
+| 🌍 **Multilingual** | Arabic, English, French |
 | 🎨 **Modern UI** | Cyberpunk design, collapsible sidebar, smooth animations |
 | 💡 **Tech‑tip splash screen** | Displays helpful tips while loading |
 
