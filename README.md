@@ -61,21 +61,6 @@ It combines essential burning capabilities with **smart exclusive features** and
 
 ---
 
-## 📊 Quick Comparison with Rufus
-
-| Feature | Rufus | FlashForge |
-|--------|-------|------------|
-| ISO/IMG burning | ✅ | ✅ |
-| File systems | FAT32, NTFS, exFAT, UDF | FAT32, NTFS, exFAT, ReFS, ext4, UDF |
-| USB health check | ❌ | ✅ |
-| Auto‑suggestion based on ISO | ❌ | ✅ |
-| Arabic language | ❌ | ✅ |
-| Cyberpunk modern UI | Classic | ⭐⭐⭐⭐⭐ |
-| Unattended install | ✅ (Beta) | ✅ |
-| Bad block scan | ✅ | ✅ (with advanced options) |
-
----
-
 ## 🚀 How to Use
 
 1. **Download** and install FlashForge.
